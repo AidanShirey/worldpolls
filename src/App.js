@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import MainVote from './Components/MainVote';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header>
+        <div className='PrimaryYellowText'>World</div><div className='PrimaryBlueText'>•</div><div className='PrimaryRedText'>Polls</div>
       </header>
+      <MainVote></MainVote>
     </div>
   );
 }
