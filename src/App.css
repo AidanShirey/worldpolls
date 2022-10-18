@@ -67,7 +67,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   width: 50%;
   cursor: pointer;
   height: 100%;
@@ -85,7 +85,7 @@ main {
   width: 4rem;
   height: 4rem;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 50%;
   transition: 0.2s;
 }
@@ -104,11 +104,29 @@ main {
 
 .ResultBar {
   display:flex;
+  flex-direction: column;
   opacity: 0;
   width: 80%;
-  height: 4rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
-  transition: 3s;
+}
+
+.PollResults {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 3rem; 
+}
+
+.PollResultsHeader {
+  display: flex;
+  font-weight: 800;
+}
+
+.PollResultsCount {
+  font-size:1.5rem
 }
 
 .Voted {

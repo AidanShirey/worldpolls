@@ -103,11 +103,20 @@ let choice2pstring = choice2p.toString().split('.')[1];
           <div className='VoteChoice PrimaryRedBackground NotVoted' onClick={() => toggleChosen('2')}>{choice2}</div>
         </div>
         <div className='ResultPanel resultsShow'>
-          <div className='ResultBar barFadeIn'>
-            <div className='PrimaryYellowBackground' style={{width: `${choice1pstring}%`, height: "100%"}}></div>
-            <div className='PrimaryRedBackground' style={{width: `${choice2pstring}%`, height: "100%"}}></div>
+          <div className='PollResults'>
+            <div className='PollResultsHeader'>
+              <div className='PrimaryYellowText'>Poll</div>•<div className='PrimaryRedText'>Results</div>
+            </div>
+            <div className='PollResultsCount'>
+              {total} total votes
+            </div>
           </div>
-          <div style={{display: 'flex'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div>, {choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+          <div className='ResultBar barFadeIn'>
+          <div className='PrimaryYellowBackground' style={{display: 'flex', width: `${choice1pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div></div>
+                <div className='PrimaryRedBackground' style={{display: 'flex', width: `${choice2pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+          </div>
         </div>
     </main>
   )
@@ -121,11 +130,20 @@ let choice2pstring = choice2p.toString().split('.')[1];
           <div className='VoteChoice PrimaryRedBackground Voted' onClick={() => toggleChosen('2')}>{choice2}</div>
         </div>
         <div className='ResultPanel resultsShow'>
-          <div className='ResultBar barFadeIn'>
-            <div className='PrimaryYellowBackground' style={{width: `${choice1pstring}%`, height: "100%"}}></div>
-            <div className='PrimaryRedBackground' style={{width: `${choice2pstring}%`, height: "100%"}}></div>
+          <div className='PollResults'>
+            <div className='PollResultsHeader'>
+              <div className='PrimaryYellowText'>Poll</div>•<div className='PrimaryRedText'>Results</div>
+            </div>
+            <div className='PollResultsCount'>
+              {total} total votes
+            </div>
           </div>
-          <div style={{display: 'flex'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div>, {choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+          <div className='ResultBar barFadeIn'>
+          <div className='PrimaryYellowBackground' style={{display: 'flex', width: `${choice1pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div></div>
+                <div className='PrimaryRedBackground' style={{display: 'flex', width: `${choice2pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+          </div>
         </div>
     </main>
   )
@@ -139,11 +157,20 @@ let choice2pstring = choice2p.toString().split('.')[1];
               <div className='VoteChoice PrimaryRedBackground' onClick={() => toggleChosen('2')}>{choice2}</div>
             </div>
             <div className='ResultPanel'>
-            <div className='ResultBar'>
-            <div className='PrimaryYellowBackground' style={{width: `${choice1pstring}%`, height: "100%"}}></div>
-            <div className='PrimaryRedBackground' style={{width: `${choice2pstring}%`, height: "100%"}}></div>
-          </div>
-          <div style={{display: 'flex'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div>, {choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+              <div className='PollResults'>
+                <div className='PollResultsHeader'>
+                  <div className='PrimaryYellowText'>Poll</div>•<div className='PrimaryRedText'>Results</div>
+                </div>
+                <div className='PollResultsCount'>
+                  {total} total votes
+                </div>
+              </div>
+              <div className='ResultBar'>
+                <div className='PrimaryYellowBackground' style={{display: 'flex', width: `${choice1pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice1pstring}% chose&nbsp;<div className='PrimaryYellowText'>{choice1}</div></div>
+                <div className='PrimaryRedBackground' style={{display: 'flex', width: `${choice2pstring}%`, height: "3rem", justifyContent: 'center', alignItems: 'center', marginTop: '2rem'}}></div>
+                <div style={{display: 'flex', fontWeight: '700'}}>{choice2pstring}% chose&nbsp;<div className='PrimaryRedText'>{choice2}</div></div>
+              </div>
             </div>
         </main>
       )
