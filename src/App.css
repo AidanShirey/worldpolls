@@ -108,7 +108,7 @@ main {
   opacity: 0;
   width: 80%;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .PollResults {
@@ -118,6 +118,7 @@ main {
   flex-direction: column;
   font-weight: 700;
   font-size: 3rem; 
+  margin-top: 1rem;
 }
 
 .PollResultsHeader {
@@ -150,6 +151,13 @@ main {
 
 .barFadeIn{
   opacity: 1;
+}
+
+.nextPollButton {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .PrimaryYellowBackground {
